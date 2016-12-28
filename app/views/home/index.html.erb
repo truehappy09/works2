@@ -1,0 +1,20 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<%= form_for @inquiry,:url => {:action => :create} do |f| %>
+
+
+<%= f.label :body , "subject"%>
+<%= f.text_field :subject %>
+</br>
+<%= f.label :name , "name"%>
+<%= f.text_field :name %>
+</br>
+<%= f.label :body , "email"%>
+<%= f.text_field :email %>
+</br>
+<%= f.label :body , "body"%>
+<%= f.text_area :body %>
+</br>
+<%= f.submit "送信" %>
+<% end %>
