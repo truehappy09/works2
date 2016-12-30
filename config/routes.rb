@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+
+
   root  'home#index' 
   
+  resources :forms, only:[:index]
+  get 'forms/find' => 'forms#find'
   resources :home, only:[:create,:new]
   get 'home/index'
   

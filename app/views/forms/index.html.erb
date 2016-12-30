@@ -1,0 +1,7 @@
+<h1>Forms#index</h1>
+<p>Find me in app/views/forms/index.html.erb</p>
+<%= form_tag forms_find_path,:method=>'get' do %>
+nameserch
+<%= text_field_tag :serch_name %>
+<%= submit_tag "search" %>
+<% end %>
